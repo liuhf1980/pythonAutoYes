@@ -46,16 +46,17 @@ class SingleCoursePlanHourPage(WebUI):
     continueCancel_loc=(By.XPATH, "//button[@class='cancel']") # 点击"OK,不继续排课"
 
     def getSelectCourseField(self):
+        self.wait1
         buttonSe_Click=self.findElement(*self.selectCourse_loc)
         ActionChains(self.driver).click(buttonSe_Click).perform()
-        self.wait
+        self.wait1
     def getCourseConfirmField(self):
         self.findElement(*self.courseConfirm_loc).click()
-        self.wait
+        self.wait1
     def getSubjectIdField(self, startIndex):
         selectLen = Select(self.findElement(*self.subjectId_loc))
         selectLen.select_by_index(startIndex)
-        self.wait
+        self.wait1
     def getRadiomultiPlanField(self):
         self.findElement(*self.radiomultiPlan_loc).click()
         self.wait
@@ -139,19 +140,8 @@ class SingleCoursePlanHourPage(WebUI):
     #批量排课
     def hourCours01(self):
         self.getSelectCourseField()
-
-        try:
-            WebDriverWait(self.driver,10, 0.2).until(EC.presence_of_element_located(*self.courseConfirm_loc))
-        except Exception as e:
-            self.driver.get_screenshot_as_file('../Report/image/hourCours01_01.png')
-            logging.error("找不到【确认】元素")
+        self.getCourseConfirmField()
         self.getSubjectIdField(2)
-        #学员管理列表
-        try:
-            WebDriverWait(self.driver, 5, 0.2).until(EC.presence_of_element_located(*self.singleTeacher_loc))
-        except Exception as e:
-            self.driver.get_screenshot_as_file('../Report/image/hourCours01_01.png')
-            logging.error("找不到【教师】元素")
         self.getSingleTeacherField()
         self.getRadiomultiPlanField()
         self.getClickAddTimeField()

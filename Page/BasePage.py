@@ -3,8 +3,8 @@ __author__ = 'xueyan'
 from selenium import  webdriver
 from selenium.webdriver.support.expected_conditions import NoSuchElementException
 from selenium.webdriver.common.by import  By
-from model.logConsole import  LogConsole
-import  logging
+# from model.logConsole import  LogConsole
+# import  logging
 import  time as t
 class Factory(object):
 	def __init__(self,driver):
@@ -28,10 +28,14 @@ class WebDdriver(object):
 		try:
 			return self.driver.find_element(*loc)
 		except NoSuchElementException as e:
-			logging.error('Error details :%s'%(e.args[0]))
+			pass
+			# logging.error('Error details :%s'%(e.args[0]))
 	@property
 	def wait(self):
-		t.sleep(2)
+		t.sleep(3)
+	@property
+	def wait1(self):
+		t.sleep(1)
 	@property
 	def wait5(self):
 		t.sleep(5)

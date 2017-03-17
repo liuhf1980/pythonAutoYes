@@ -10,9 +10,9 @@ from .BasePage import  WebUI
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import  By
-from model.logConsole import  LogConsole
+# from model.logConsole import  LogConsole
 
-import  logging
+# import  logging
 
 class BaseLogin(unittest.TestCase):
     def setUp(self):
@@ -26,7 +26,7 @@ class BaseLogin(unittest.TestCase):
             WebDriverWait(self.driver, 10, 0.2).until(EC.presence_of_element_located((By.ID,"login-name")))
         except Exception as e:
             self.driver.get_screenshot_as_file('../Report/image/loginErro.png')
-            logging.error("找不到【登录用户名】元素")
+            # logging.error("找不到【登录用户名】元素")
         self.driver.find_element_by_id('login-name').send_keys('qiqi1')
         self.driver.find_element_by_id('login-pass').send_keys('password')
         self.driver.find_element_by_name('user.verifyCode').send_keys('1234')
