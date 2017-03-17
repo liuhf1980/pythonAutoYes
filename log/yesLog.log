@@ -1,0 +1,24 @@
+[2017-03-17 11:43:06,289] [DEBUG] POST http://127.0.0.1:37002/session {"desiredCapabilities": {"browserName": "chrome", "javascriptEnabled": true, "platform": "ANY", "chromeOptions": {"extensions": [], "args": []}, "version": ""}, "requiredCapabilities": {}}
+[2017-03-17 11:43:11,356] [DEBUG] Finished Request
+[2017-03-17 11:43:11,356] [DEBUG] POST http://127.0.0.1:37002/session/107dfea10f69ec0a184cc1aa9617cb2e/window/current/maximize {"windowHandle": "current", "sessionId": "107dfea10f69ec0a184cc1aa9617cb2e"}
+[2017-03-17 11:43:12,601] [DEBUG] Finished Request
+[2017-03-17 11:43:12,601] [DEBUG] POST http://127.0.0.1:37002/session/107dfea10f69ec0a184cc1aa9617cb2e/url {"url": "http://172.168.101.83/", "sessionId": "107dfea10f69ec0a184cc1aa9617cb2e"}
+[2017-03-17 11:43:16,054] [DEBUG] Finished Request
+[2017-03-17 11:43:16,056] [DEBUG] POST http://127.0.0.1:37002/session/107dfea10f69ec0a184cc1aa9617cb2e/element {"value": "login-name", "sessionId": "107dfea10f69ec0a184cc1aa9617cb2e", "using": "id"}
+[2017-03-17 11:43:16,103] [DEBUG] Finished Request
+[2017-03-17 11:43:16,104] [DEBUG] POST http://127.0.0.1:37002/session/107dfea10f69ec0a184cc1aa9617cb2e/element {"value": "login-name", "sessionId": "107dfea10f69ec0a184cc1aa9617cb2e", "using": "id"}
+[2017-03-17 11:43:16,140] [DEBUG] Finished Request
+[2017-03-17 11:43:16,141] [DEBUG] POST http://127.0.0.1:37002/session/107dfea10f69ec0a184cc1aa9617cb2e/element/0.3988793109279125-1/value {"id": "0.3988793109279125-1", "value": ["q", "i", "q", "i", "1"], "sessionId": "107dfea10f69ec0a184cc1aa9617cb2e"}
+[2017-03-17 11:43:16,259] [DEBUG] Finished Request
+[2017-03-17 11:43:16,259] [DEBUG] POST http://127.0.0.1:37002/session/107dfea10f69ec0a184cc1aa9617cb2e/element {"value": "login-pass", "sessionId": "107dfea10f69ec0a184cc1aa9617cb2e", "using": "id"}
+[2017-03-17 11:43:16,309] [DEBUG] Finished Request
+[2017-03-17 11:43:16,310] [DEBUG] POST http://127.0.0.1:37002/session/107dfea10f69ec0a184cc1aa9617cb2e/element/0.3988793109279125-2/value {"id": "0.3988793109279125-2", "value": ["p", "a", "s", "s", "w", "o", "r", "d"], "sessionId": "107dfea10f69ec0a184cc1aa9617cb2e"}
+[2017-03-17 11:43:16,430] [DEBUG] Finished Request
+[2017-03-17 11:43:16,430] [DEBUG] POST http://127.0.0.1:37002/session/107dfea10f69ec0a184cc1aa9617cb2e/element {"value": "user.verifyCode", "sessionId": "107dfea10f69ec0a184cc1aa9617cb2e", "using": "name"}
+[2017-03-17 11:43:16,464] [DEBUG] Finished Request
+[2017-03-17 11:43:16,464] [DEBUG] POST http://127.0.0.1:37002/session/107dfea10f69ec0a184cc1aa9617cb2e/element/0.3988793109279125-3/value {"id": "0.3988793109279125-3", "value": ["1", "2", "3", "4"], "sessionId": "107dfea10f69ec0a184cc1aa9617cb2e"}
+[2017-03-17 11:43:16,588] [DEBUG] Finished Request
+[2017-03-17 11:43:16,589] [DEBUG] POST http://127.0.0.1:37002/session/107dfea10f69ec0a184cc1aa9617cb2e/element {"value": "//button[@type='submit']", "sessionId": "107dfea10f69ec0a184cc1aa9617cb2e", "using": "xpath"}
+[2017-03-17 11:43:16,642] [DEBUG] Finished Request
+[2017-03-17 11:43:16,643] [DEBUG] POST http://127.0.0.1:37002/session/107dfea10f69ec0a184cc1aa9617cb2e/element/0.3988793109279125-4/click {"id": "0.3988793109279125-4", "sessionId": "107dfea10f69ec0a184cc1aa9617cb2e"}
+[2017-03-17 11:43:16,728] [DEBUG] Finished Request
